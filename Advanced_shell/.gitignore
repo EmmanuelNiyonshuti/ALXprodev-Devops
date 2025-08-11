@@ -1,0 +1,6 @@
+errors.txt
+data.json
+.env
+.venv
+__pycache__
+.gitignore
