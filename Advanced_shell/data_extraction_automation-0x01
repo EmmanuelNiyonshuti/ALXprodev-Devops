@@ -3,4 +3,4 @@
 # extracts the Pokémon’s name, height, weight, and type from the JSON file created in Task 0
 # Format the output in a human-readable way,“Pikachu is of type Electric, weighs 6kg, and is 0.4m tall.” only use these commands: jq, awk, sed
 
-jq -r '"\(.name[0:1] | ascii_upcase)\(.name[1:]) is of type \(.types[0].type.name[0:1] | ascii_upcase)\(.types[0].type.name[1:]), weighs \(.weight / 10)kg, and is \(.height / 10) tall."' data.json
+jq -r '"\(.name[0:1] | ascii_upcase)\(.name[1:]) is of type \(.types[0].type.name[0:1] | ascii_upcase)\(.types[0].type.name[1:]), weighs \(.weight / 10)kg, and is \(.height / 10)m tall."' data.json
